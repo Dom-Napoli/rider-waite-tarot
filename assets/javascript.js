@@ -2,7 +2,11 @@
 let container = document.querySelector(".container");
 
 //ARRAY containing JavaScript Object. Data used to create html elements
-let cards = [{ name: "The High Priestess", image: "http://www.learntarot.com/bigjpgs/maj02.jpg", description1: "The High Priestess is the guardian of the unconscious. She sits in front of the thin veil of unawareness which is all that separates us from our inner landscape. She contains within herself the secrets of these realms and offers us the silent invitation.", description2: "The High Priestess is the feminine principle that balances the masculine force of the Magician. The feminine archetype in the tarot is split between the High Priestess and the Empress. The High Priestess is the mysterious unknown that women often represent, especially in cultures that focus on the tangible and known. The Empress represents woman's role as the crucible of life.", description3: "In readings, the High Priestess poses a challenge to you to go deeper - to look beyond the obvious, surface situation to what is hidden and obscure. She also asks you to recall the vastness of your potential and to remember the unlimited possibilities you hold within yourself. The High Priestess can represent a time of waiting and allowing. It is not always necessary to act to achieve your goals. Sometimes they can be realized through a stillness that gives desire a chance to flower within the fullness of time.",
+let cards = [{ name: "The Magician", image: "http://www.learntarot.com/bigjpgs/maj01.jpg", description1: "The Magician is the archetype of the active, masculine principle - the ultimate achiever. He symbolizes the power to tap universal forces and use them for creative purposes. Note his stance in the picture. He acts as a lightening rod - one arm extended up into the Divine for inspiration, the other pointing toward Earth to ground this potent energy. His abilities appear magical at times because his will helps him achieve what seem to be miracles.<br><br>What makes the Magician so powerful? First, he is not afraid to act. He believes in himself and is willing to put that belief on the line. He also knows what he intends to do and why. He doesn't hesitate because he understands his situation exactly. The Magician can focus with single-minded determination. As long as he remembers the divine source of his power, the Magician remains the perfect conduit for miracles. <br><br>In a reading, the Magician implies that the primal forces of creativity are yours if you can claim your power and act with awareness and concentration. This card is a signal to act and act now, provided you understand exactly what you want and are committed to getting it.", description2: "There are no separate explanations for reversed cards. The meaning of a reversed card depends on what the card would mean if upright. A reversed card shows that a card's energy is present, but at a lower level. For some reason, the energy cannot express freely, normally or completely. It may be: still in its early stages, losing force and power, blocked or restricted, incomplete, inappropriate, being denied, only present in appearance", description3: "",
+copyright: "Source: leartarot.com (Copyright © 1995-2021 by Joan Bunning)",
+webpage: "http://www.learntarot.com/maj01.htm" },
+
+{ name: "The High Priestess", image: "http://www.learntarot.com/bigjpgs/maj02.jpg", description1: "The High Priestess is the guardian of the unconscious. She sits in front of the thin veil of unawareness which is all that separates us from our inner landscape. She contains within herself the secrets of these realms and offers us the silent invitation.", description2: "The High Priestess is the feminine principle that balances the masculine force of the Magician. The feminine archetype in the tarot is split between the High Priestess and the Empress. The High Priestess is the mysterious unknown that women often represent, especially in cultures that focus on the tangible and known. The Empress represents woman's role as the crucible of life.", description3: "In readings, the High Priestess poses a challenge to you to go deeper - to look beyond the obvious, surface situation to what is hidden and obscure. She also asks you to recall the vastness of your potential and to remember the unlimited possibilities you hold within yourself. The High Priestess can represent a time of waiting and allowing. It is not always necessary to act to achieve your goals. Sometimes they can be realized through a stillness that gives desire a chance to flower within the fullness of time.",
 copyright: "Source: leartarot.com (Copyright © 1995-2021 by Joan Bunning)",
 webpage: "http://www.learntarot.com/maj02.htm" }, 
 
@@ -99,7 +103,7 @@ for (let i =0; i <cards.length; i++) {
 
 let div = document.createElement("div");
     console.log(div);
-    div.setAttribute("class", "container");
+    div.setAttribute("class", "card");
     console.log(container);
 let h2 = document.createElement("h2");
     h2.textContent = cards[i].name;
@@ -110,11 +114,12 @@ let img = document.createElement("img");
     console.log(img);
 let d1 = document.createElement("p");
     d1.setAttribute("class", "description1");
-    d1.textContent = cards[i].description1;
+    d1.innerHTML = cards[i].description1;
     console.log(d1);
 let d2 = document.createElement("p");
     d2.setAttribute("class", "description2");
     d2.textContent = cards[i].description2;
+    d2.style.display = "none";
     console.log(d2);
 let d3 = document.createElement("p");
     d3.setAttribute("class", "description3");
@@ -149,5 +154,41 @@ console.log(div);
 //append div to container
 
 container.append(div);
+}
+
+let allcards = document.querySelectorAll(".card");
+//console.log = Nodelist of all 22 images.
+console.log(allcards);
+console.log(allcards[0]);
+
+for (let i=0; i < allcards.length; i++) {
+    console.log(allcards[i]);
+    allcards[i].addEventListener("click", function(){
+        // allcards[i].style.border= "3px solid black";
+
+        reverseCard(allcards[i])
+
+        // resetCard()
+
+    })
+}
+
+
+function resetCard() {
 
 }
+
+function reverseCard(card){ 
+    card.setAttribute("class", "card reverse");
+
+    let cardImage = card.querySelector("img");
+    cardImage.style.rotate = "180deg";
+    let description1 = card.querySelector(".description1");
+    description1.style.display = "none";
+    let description2 = card.querySelector(".description2");
+    console.log(description2);
+    description2.style.display = "block";
+}
+
+
+
