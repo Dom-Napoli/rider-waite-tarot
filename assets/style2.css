@@ -5,6 +5,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+nav {
+    background: red;
+    color: white;
+}
 
 /*container styling*/
 .container {
@@ -77,4 +81,7 @@ a {
     font-weight: bold;
     font-size: 11px;
     color: blue;
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
 }

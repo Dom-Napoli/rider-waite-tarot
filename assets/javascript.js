@@ -96,7 +96,7 @@
 //     console.log(cards[i].name);
 //     console.log(cards[i].image);
 //     console.log(cards[i].upright);
-    console.log(cards[i].reverse);
+    // console.log(cards[i].reverse);
 
     // console.log(cards[i].description3);
     // console.log(cards[i].description4);
@@ -157,7 +157,7 @@
 //append div to container
 
 // container.append(div);
-}
+// }
 
 // let allcards = document.querySelectorAll(".card");
 // //console.log = Nodelist of all 22 images.
@@ -174,8 +174,8 @@
 
         // resetCard()
 
-    })
-}
+//     })
+// }
 
 
 // function resetCard() {

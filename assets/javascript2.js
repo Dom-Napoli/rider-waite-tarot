@@ -148,35 +148,57 @@ console.log(arcanacard);
 container.append(arcanacard);
 }
 
-let allcards = document.querySelectorAll("arcana-card");
+let allcards = document.querySelectorAll(".arcana-card");
 //console.log = Nodelist of all 22 images.
-console.log(allcards);
-console.log(allcards[0]);
+// console.log(allcards);
+// console.log(allcards[0]);
 
-// for (let i=0; i < allcards.length; i++) {
-//     console.log(allcards[i]);
-//     allcards[i].addEventListener("click", function(){
-//         // allcards[i].style.border= "3px solid black";
+for (let i=0; i < allcards.length; i++) {
+    // console.log(i);
+    // console.log(allcards[i]);
+    allcards[i].addEventListener("click", function(){
+        // allcards[i].style.border= "3px solid black";
+        
 
-//         reverseCard(allcards[i])
+        console.log(allcards[i].className)
 
-        // resetCard()
+        if(allcards[i].className === "arcana-card") {
+            reverseCard(allcards[i]); // 1 card 
+        } else if (allcards[i].className === "arcana-card reverse") {
+            resetCard(allcards[i]);
+        }
 
-//     })
-// }
+    })
+
+
+
+    
+}
 
 
 // function resetCard() {
 
 // }
 
-// function reverseCard(card){ 
-//     card.setAttribute("class", "card reverse");
+function reverseCard(card){ 
+    card.setAttribute("class", "arcana-card reverse");
 
-//     let cardImage = card.querySelector("img");
-//     cardImage.style.rotate = "180deg";
-//     let description1 = card.querySelector(".description1");
-//     description1.style.display = "none";
-//     let description2 = card.querySelector(".description2");
-//     console.log(description2);
-// }
+    let cardImage = card.querySelector("img");
+    cardImage.style.rotate = "180deg";
+    let upright = card.querySelector(".upright");
+    upright.style.display = "none";
+    let reverse = card.querySelector(".reverse");
+    reverse.style.display = "block";
+    // console.log(reverse);
+}
+
+function resetCard(card){
+    card.setAttribute("class", "arcana-card");
+    let cardImage = card.querySelector("img");
+    cardImage.style.rotate = "0deg";
+    let upright = card.querySelector(".upright");
+    upright.style.display = "block";
+    let reverse = card.querySelector(".reverse");
+    reverse.style.display = "none";
+    // console.log(reverse);
+}
