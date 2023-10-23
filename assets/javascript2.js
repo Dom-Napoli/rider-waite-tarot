@@ -82,7 +82,7 @@ webpage: "http://www.learntarot.com/maj18.htm" },
 copyright: "Source: leartarot.com (Copyright © 1995-2021 by Joan Bunning)", 
 webpage: "http://www.learntarot.com/maj19.htm" },
 
-{ name: "Judgemment", image: "http://www.learntarot.com/bigjpgs/maj20.jpg", upright: "On Card 20, we see people rising up at the call of an angel. It is Judgment Day, when the faithful are brought to heaven, but what about those who are not saved? Have they been judged and found wanting? For their sins, will they be denied the presence of God? It is this aspect of judgment that is unsettling. How can judgment be reconciled with forgiveness?<br><br>In fact, judgment comes in two forms. The hurtful kind says - What you did is wrong, and you are bad and worthless for having done it. This type of judgment separates and leaves no room for redemption. It is possible to judge without condemning. We assess the matter, weigh all sides and try to discern the truth. We recognize the need to choose and hope for the courage to do so wisely - but without blame.<br><br>In readings, Card 20 can be a reminder that judgments are necessary; sometimes you must decide. At such moments, it is best to consider the matter carefully and then commit yourself without censure. If you are being judged yourself, learn from the process. Take what is of value, correct what needs correcting, but never lose sight of your worth.<br><br>Card 20 also stands for the feelings that come with salvation. When the angel calls, you are reborn - cleansed of all guilts and burdens. The past and its mistakes are behind you, and you are ready to begin anew. You may even feel a calling - a personal conviction of what you are meant to do. If you are in a low period, in need of hope and absolution, Judgement can show you that renewal is at hand.", reverse: "There are no separate explanations for reversed cards. The meaning of a reversed card depends on what the card would mean if upright. A reversed card shows that a card's energy is present, but at a lower level. For some reason, the energy cannot express freely, normally or completely. It may be - still in its early stages losing force and power, blocked or restricted, incomplete, inappropriate, being denied, only present in appearance.",
+{ name: "Judgement", image: "http://www.learntarot.com/bigjpgs/maj20.jpg", upright: "On Card 20, we see people rising up at the call of an angel. It is Judgment Day, when the faithful are brought to heaven, but what about those who are not saved? Have they been judged and found wanting? For their sins, will they be denied the presence of God? It is this aspect of judgment that is unsettling. How can judgment be reconciled with forgiveness?<br><br>In fact, judgment comes in two forms. The hurtful kind says - What you did is wrong, and you are bad and worthless for having done it. This type of judgment separates and leaves no room for redemption. It is possible to judge without condemning. We assess the matter, weigh all sides and try to discern the truth. We recognize the need to choose and hope for the courage to do so wisely - but without blame.<br><br>In readings, Card 20 can be a reminder that judgments are necessary; sometimes you must decide. At such moments, it is best to consider the matter carefully and then commit yourself without censure. If you are being judged yourself, learn from the process. Take what is of value, correct what needs correcting, but never lose sight of your worth.<br><br>Card 20 also stands for the feelings that come with salvation. When the angel calls, you are reborn - cleansed of all guilts and burdens. The past and its mistakes are behind you, and you are ready to begin anew. You may even feel a calling - a personal conviction of what you are meant to do. If you are in a low period, in need of hope and absolution, Judgement can show you that renewal is at hand.", reverse: "There are no separate explanations for reversed cards. The meaning of a reversed card depends on what the card would mean if upright. A reversed card shows that a card's energy is present, but at a lower level. For some reason, the energy cannot express freely, normally or completely. It may be - still in its early stages losing force and power, blocked or restricted, incomplete, inappropriate, being denied, only present in appearance.",
 copyright: "Source: leartarot.com (Copyright © 1995-2021 by Joan Bunning)", 
 webpage: "http://www.learntarot.com/maj20.htm" },
 
@@ -169,10 +169,6 @@ for (let i=0; i < allcards.length; i++) {
         }
 
     })
-
-
-
-    
 }
 
 
@@ -182,7 +178,6 @@ for (let i=0; i < allcards.length; i++) {
 
 function reverseCard(card){ 
     card.setAttribute("class", "arcana-card reverse");
-
     let cardImage = card.querySelector("img");
     cardImage.style.rotate = "180deg";
     let upright = card.querySelector(".upright");
