@@ -12,7 +12,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1;
-    box-shadow: #450396 0px 0px 8px 0px;;
+    box-shadow: #450396 0px 0px 10px 0px;;
 }
 
 .logo-img {
@@ -32,7 +32,7 @@ ul li {
 }
 
 ul li a {
-    font-family: Arial;
+    font-family: Trebuchet MS;
     font-size: 1em;
     font-weight: 600;
     color: #450396;
@@ -54,44 +54,31 @@ ul li a {
     align-items: center;
     margin: 20px 8px 20px 8px;
     background: #ffffff;
-    border: 3px solid #450396;
+    border: 2px solid #450396;
     /* box-shadow: 0px 4px 9px 2px #292929;  */
 } 
 
 .pic-side {
-    width: 47%;
+    width: 49%;
     display: flex;
     flex-direction: row;
     margin: 20px 8px 20px 8px;
     background: #ffffff;
-    border: 3px solid #450396;
+    /* border: 3px solid #450396; */
     /* box-shadow: 0px 4px 9px 2px #292929;  */
 }
 
 .text-side {
-    width: 50%; 
+    overflow: auto;
+    height: 450px;
+    width: 48%; 
     display: flex;
     flex-direction: column;
     margin: 20px 8px 20px 8px;
     background: #ffffff;
-    border: 3px solid #450396;
+    border: 1px solid #000;
     /* box-shadow: 0px 4px 9px 2px #292929;  */
 }
-
-/* .arcana-card h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 33px;
-    color: #000;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: auto;
-    margin: 8px 5px;
-    padding: 16px 13px;
-    border-radius: 18px;;
-    background-color: #ddd1c0;
-    box-shadow: 0px 8px 10px 0px#000;
-} */
 
 .pic-side img {
     width: 100%;
@@ -99,16 +86,16 @@ ul li a {
     /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    /* box-shadow: 0px 6px 9px 3px#292929; */
+    box-shadow: 0px 4px 8px 2px#292929;
     padding-top: 13px;
 }
 
 .text-side p {
-    font-family: Trebuchet MS;
-    font-size: 11px;
-    font-weight: 700;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 500;
     color: #000;
-    text-align: justify;
+    text-align: left;
     text-indent: 9px;
     padding: 16px 11px;
     margin: 0 auto;
@@ -134,15 +121,33 @@ ul li a {
 }
 
 footer {
-    color: yellow;
-}
-
-footer h2 {
-    color: white;
-    background-color: #000;
+    color: #450396;
+    background-color: #dbdbdb;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: Trebuchet MS;
     padding: 20px;
-    opacity: .4;
-    
 }
+
+h2 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    list-style: none;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 3px 0;
+}
+

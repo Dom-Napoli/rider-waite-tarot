@@ -104,6 +104,7 @@ for (let i =0; i <arcana.length; i++) {
 
 let carddiv = document.createElement("div");       
         carddiv.setAttribute("class", "card-container");
+        carddiv.style.background = "#f1f0f0";
         // console.log(carddiv);
 let textdiv = document.createElement("div");
         // console.log(textdiv);
