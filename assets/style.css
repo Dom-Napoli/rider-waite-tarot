@@ -91,7 +91,7 @@ ul li a {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
     background: #450396;
 }
 
