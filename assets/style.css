@@ -96,8 +96,8 @@ ul li a {
 }
 
 .text-side p {
-    font-family: Arial;
-    font-size: 16px;
+    font-family: Arial Narrow;
+    font-size: 13px;
     font-weight: 500;
     color: #000;
     text-align: left;
@@ -112,6 +112,16 @@ ul li a {
     text-align: center;
     font-weight: bold;
     font-style: normal;
+    padding: 10px 11px;
+}
+
+.text-side .horoscope {
+    font-size: 12px;
+    color: #450396;
+    text-indent: none;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;  
 }
 
 .text-side a {

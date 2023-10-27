@@ -36,7 +36,7 @@ let imgbutton = document.createElement("a");
     imgbutton.setAttribute("class", "imageb");
     imgbutton.setAttribute("href", `./card.html?card=${arcana[i].id}`);
     imgbutton.textContent = "Click";
-
+    // console.log(imgbutton);
 let up = document.createElement("p");
     up.setAttribute("class", "upright");
     up.innerHTML = arcana[i].upright;
@@ -51,6 +51,11 @@ let bjcopy = document.createElement("p");
     bjcopy.textContent = arcana[i].copyright;
     bjcopy.innerHTML = arcana[i].copyright;
 //     // console.log(bjcopy);
+let hors = document.createElement("p");
+    hors.setAttribute("class", "horoscope");
+    hors.textContent = arcana[i].horoscope;
+    hors.innerHTML = arcana[i].horoscope;
+    // console.log(hors);
 let cardpage = document.createElement("a");
     cardpage.setAttribute("href", arcana[i].webpage);
     cardpage.setAttribute("target", "_blank");
@@ -67,6 +72,7 @@ picdiv.append(imgbutton);
 textdiv.append(up); 
 textdiv.append(rev);
 textdiv.append(bjcopy);
+textdiv.append(hors);
 textdiv.append(cardpage);
 // console.log(textdiv);
 
