@@ -115,15 +115,6 @@ ul li a {
     padding: 10px 11px;
 }
 
-.text-side .horoscope {
-    font-size: 12px;
-    color: #450396;
-    text-indent: none;
-    text-align: center;
-    font-weight: bold;
-    font-style: normal;  
-}
-
 .text-side a {
     text-decoration: none;
     font-family: arial;
