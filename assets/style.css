@@ -76,7 +76,7 @@ ul li a {
     height: auto;
     border-radius: 15px;;
     box-shadow: 2px 5px 6px 3px #8f8f8f;
-    padding-top: 13px;
+    /* padding-top: 13px; */
 }
 
 .text-side {
