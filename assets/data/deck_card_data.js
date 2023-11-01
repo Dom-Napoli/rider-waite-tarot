@@ -1,7 +1,7 @@
 const decks = [
     {id: 1, name: "Rider Waite Tarot"},
     {id: 2, name: "Wandering Spirit"},
-    (id: 3, name: "CBD Tarot De Marseille")
+    // (id: 3, name: "CBD Tarot De Marseille"),
     // {id: 3, name ""}
 ]
 

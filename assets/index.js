@@ -32,16 +32,12 @@ for (let i =0; i <arcana.length; i++) {
         image.setAttribute("class", "card-image");
     //     // console.log(image);
         image.setAttribute("src", arcana[i].image);
-    //     // console.log(image);
+            // console.log(image);
     let imgbutton = document.createElement("a");
         imgbutton.setAttribute("class", "imageb");
         imgbutton.setAttribute("href", `./card.html?card=${arcana[i].id}`);
         imgbutton.textContent = "Click";
         // console.log(imgbutton);
-    // let wtmeaning = document.createElement("p");
-    //     up.setAttribute("class", "meaning");
-    //     up.innerHTML = arcana[i].meaning;
-    //     console.log(meaning);
     let up = document.createElement("p");
         up.setAttribute("class", "upright");
         up.innerHTML = arcana[i].upright;
@@ -64,7 +60,7 @@ for (let i =0; i <arcana.length; i++) {
     let cardpage = document.createElement("a");
         cardpage.setAttribute("href", arcana[i].webpage);
         cardpage.setAttribute("target", "_blank");
-        cardpage.textContent = "Visit Card Webpage";
+        // cardpage.textContent = "Visit Card Webpage";
         console.log(cardpage);
         
     // target = "_blank"
