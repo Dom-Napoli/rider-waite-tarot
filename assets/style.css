@@ -79,6 +79,22 @@ ul li a {
     /* padding-top: 13px; */
 }
 
+.imageb {
+    background: #c7c7c7;
+    font-family: arial;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #450396;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border-radius: 20px;
+    padding: 2px;
+}
+
 .text-side {
     overflow: auto;
     height: 400px;
