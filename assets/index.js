@@ -36,7 +36,7 @@ for (let i =0; i <arcana.length; i++) {
     let imgbutton = document.createElement("a");
         imgbutton.setAttribute("class", "imageb");
         imgbutton.setAttribute("href", `./card.html?card=${arcana[i].id}`);
-        imgbutton.textContent = "Change Deck";
+        imgbutton.textContent = "Card Page";
         // console.log(imgbutton);
     let up = document.createElement("p");
         up.setAttribute("class", "upright");

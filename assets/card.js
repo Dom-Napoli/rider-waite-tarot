@@ -1,25 +1,32 @@
-const queryString = window.location.search;
+const queryString = window.location.search; 
 console.log(queryString);
+// //search
 
 const urlParams = new URLSearchParams(queryString);
 console.log(urlParams);
+// //where to search
 
 const cardId = parseInt(urlParams.get("card"));
-console.log(typeof cardId);
+console.log(cardId);
+// //provide all data
 
-console.log(cardData);
+// console.log(cardData);
 
+let selectedCardObj
 
-// get current card 
-let currentCardObj; 
-
-for(let i = 0; i < cardData.length; i++){
-    if(cardData[i].id === cardId) {
-        currentCardObj = cardData[i];
+for (let i=0; i < cardData.length; i++) {
+    // console.log(cardData[i]);
+    if (cardData[i].id === cardId) {
+        selectedCardObj = cardData[i]
     }
 }
 
-console.log(currentCardObj)
+console.log(selectedCardObj)
+
+
+
+
+
 
 
 
