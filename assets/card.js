@@ -111,11 +111,11 @@ console.log(idMatchCards);
 let cardHeader = document.querySelector(".card-name");
 cardHeader.textContent = chosenCard.name;
 
-// let  = document.querySelector(".deck-name");
-// cardHeader.textContent = chosenDeck.name;
+let  deckHeader = document.querySelector(".deck-name");
+cardHeader.textContent = chosenDeck.name;
 
-// let cardSuit = document.querySelector(".card-suit");
-// cardSuit.textContent = selectedCard.suit;
+let cardSuit = document.querySelector(".card-suit");
+cardSuit.textContent = selectedCard.suit;
 
 document.querySelector(".card-image").src = selectedCardObj.image;
 

@@ -11,25 +11,28 @@
 <body>
 
     <nav>
-        <img class="logo-img" src="./assets/images/Web Logo.png" alt="logo">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="">Readings</a></li>
-            <li><a href="">Decks</a></li>
-            <li><a href="./history.html">History</a></li>
+    <img class="logo-img" src="./assets/images/Web Logo.png" alt="logo">
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="">Readings</a></li>
+        <li><a href="">Decks</a></li>
+        <li><a href="./history.html">History</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <div class="card-container">
-            <div class="card-front">
-                <h4 class="card-name">Card Name</h4>
-                <h5 class="deck-name">Deck Name</h5>
-                <img class="card-image" src="./assets/images/" alt="card image">
-            </div>
 
-            <div class="text-back">
-                <h4 class="suit">Meanings</h4>
+        <!--One card-container for Wandering Tarot and a Second next to it for CBD Tarot. Both card-containers will contain two divs -->
+    <div class="card-container">
+        <div class="card-front">
+            <h3 >Card Name:</h3>
+            <h4 class="deck-name">Deck Name:</h4>
+            <img class="card-image" src="" alt="card image">
+        </div>
+        <!--After user "clicks" a button, the div above displays to "none" and then the div below becomes visible for the user to read.-->
+        <div class="text-back">
+                <h3>Meaning:</h3>
+                <h4 class="suit">Suit:</h4>
                 <p class="wtmeaning"></p>    
                 <P class="upright"></P>
                 <p class="reverse"></p>
@@ -41,7 +44,7 @@
 
         <!--Considering a button for below-->
         <!-- <div class="card-container associated-cards">
-            <h3>Associated Cards</h3>
+            <h3>Click for Meaning</h3>
         </div> -->
 
     <footer>
@@ -49,6 +52,7 @@
         <ul class="footer ul">
             <li class="footer li">Phone:  (858) 232-2323</li>
             <li>email:  readingsbydom@proton.me</li>
+            <li>YouTube Channel</li>
         </ul>
     </footer>
 
