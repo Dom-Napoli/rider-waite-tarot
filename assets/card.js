@@ -57,7 +57,7 @@ console.log(chosenCard);
 //     }
 //     console.log(chosenCopyright);
 
-// LINES: 61-67: Attempt to create an Array but length came back at 0. Also, defined: "&&" = Operator with description of "and". "!== means 'not equal value or not equal type" - These operators imply that the each card's id number are not identical but the parameters are the same.
+// LINES: 61-67: Also, defined: "&&" = Operator with description of "and". "!== means 'not equal value or not equal type" - These operators imply that the each card's id number are not identical but the parameters are the same.
 let idMatchCards = []
 for (let i = 0; i < cardData.length; i++) {
     if ((cardData[i].card_id === chosenCard.id) && (cardData[i].id !== selectedCardObj.id)) {
