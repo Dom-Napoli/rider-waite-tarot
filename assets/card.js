@@ -108,13 +108,16 @@ console.log(idMatchCards);
 // selectedCard //is the obj representing the card the selectedCardObj belongs to by linking the selectedCardObj.card_id to the card.id of cards in deck_card_data.js 
 // sameIdCards //is an array of objs that match the same selectedCard.id with the selectedCardObj is associated with. 
 
-// let cardHeader = document.querySelector(".card-name");
-// cardHeader.textContent = selectedCard.name;
+let cardHeader = document.querySelector(".card-name");
+cardHeader.textContent = chosenCard.name;
+
+// let  = document.querySelector(".deck-name");
+// cardHeader.textContent = chosenDeck.name;
 
 // let cardSuit = document.querySelector(".card-suit");
 // cardSuit.textContent = selectedCard.suit;
 
-// document.querySelector(".card-image").src = selectedCardObj.image;
+document.querySelector(".card-image").src = selectedCardObj.image;
 
 
 // This will allow card.js to have variables that contain the deck, card, and card ojects that are associated with the card that was selected from index.js

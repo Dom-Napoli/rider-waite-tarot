@@ -1,5 +1,6 @@
 body {  
     background: #c5c0cb;
+    /* background: black; */
     margin: 0;
 }
 
@@ -62,7 +63,7 @@ ul li a {
     border: 2px solid #450396;
 } 
 
-.pic-side {
+.card-front {
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -71,14 +72,29 @@ ul li a {
     background: #f1f0f0;
 }
 
-.pic-side img {
+h4 {
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-weight: 600;
+    color: #450396;
+}
+
+.deck-name h5 {
+    font-family: Arial Narrow;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000; 
+}
+
+.card-image {
     width: 100%;
     height: auto;
     border-radius: 15px;;
     box-shadow: 2px 5px 6px 3px #8f8f8f;
     /* padding-top: 13px; */
+}
 
-}.imageb {
+/* .imageb {
     background: #c7c7c7;
     font-family: arial;
     color: #000;
@@ -92,11 +108,11 @@ ul li a {
     width: 50%;
     border-radius: 20px;
     padding: 2px;
-}
+} */
 
-.text-side {
-    overflow: auto;
-    height: 400px;
+.text-back {
+    /* overflow: auto;
+    height: 400px; */
     width: 48%; 
     display: flex;
     flex-direction: column;
@@ -105,12 +121,12 @@ ul li a {
     border: 1px solid #000;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 3px;
     background: #450396;
-}
+} */
 
-.text-side p {
+.text-back p {
     font-family: Arial Narrow;
     font-size: 13px;
     font-weight: 500;
@@ -121,7 +137,7 @@ ul li a {
     margin: 0 auto;
 }
 
-.text-side .copyright {
+.text-back .copyright {
     font-size: 8px;
     text-indent: none;
     text-align: center;
@@ -130,7 +146,7 @@ ul li a {
     padding: 10px 11px;
 }
 
-.text-side a {
+.text-back a {
     text-decoration: none;
     font-family: arial;
     font-weight: bold;
