@@ -66,7 +66,7 @@ for (let i = 0; i < cardData.length; i++) {
         idMatchCards.push(cardData[i]);
     }
 }
-console.log(idMatchCards);
+console.log("This is idMatchCards: ", idMatchCards);
 
 
 
@@ -110,28 +110,93 @@ console.log(idMatchCards);
 // selectedCard //is the obj representing the card the selectedCardObj belongs to by linking the selectedCardObj.card_id to the card.id of cards in deck_card_data.js 
 // sameIdCards //is an array of objs that match the same selectedCard.id with the selectedCardObj is associated with. 
 
-let cardHeader = document.querySelector(".card-name");
-    console.log(cardHeader);
-    cardHeader.textContent = chosenCard.name;
-    cardHeader.setAttribute("class", ".card-name");
+console.log("selectedCardObj and chosenCard: ",selectedCardObj, chosenCard)
 
-let deckName = document.querySelector(".deck-name");
-    console.log(deckName);
-    deckName.textContent = chosenDeck.name;
-    deckName.setAttribute("class", ".deck-name");
 
-let cardSuit = document.querySelector(".card-suit");
-    console.log(cardSuit);
-    cardSuit.textContent = chosenCard.suit;
-    cardSuit.setAttribute("class", "card-suit");
 
-let cardImage = document.querySelector(".card-image").src = selectedCardObj.image;
-    console.log(cardImage);
+let cardheader = document.querySelector(".card-name");
+    console.log(cardheader);
+    cardheader.textContent = chosenCard.name;
+    // cardheader.setAttribute("class", ".card-name");
 
-let cardUpright = document.querySelector(".upright");
-    console.log(cardUpright);
-    cardUpright.textContent = selectedCardObj.upright;
-    cardUpright.setAttribute("class", "card-p")
+let deckname = document.querySelector(".deck-name");
+    console.log(deckname);
+    deckname.textContent = chosenDeck.name;
+    // deckname.setAttribute("class", ".deck-name");
+
+let cardsuit = document.querySelector(".card-suit");
+    console.log(cardsuit);
+    cardsuit.textContent = chosenCard.suit;
+    // cardsuit.setAttribute("class", "card-suit");
+
+let cardimage = document.querySelector(".card-image").src = selectedCardObj.image;
+    console.log("card-image");
+
+let wtmeaning = document.querySelector(".wtmeaning");
+    console.log(wtmeaning);
+    wtmeaning.textContent = selectedCardObj.wtmeaning;
+    // wtmeaning.setAttribute("class", "wtmeaning");    
+    wtmeaning.innerHTML = selectedCardObj.wtmeaning;
+
+let cardupright = document.querySelector(".upright");
+    console.log(cardupright);
+    cardupright.textContent = selectedCardObj.upright;
+    // cardupright.setAttribute("class", ".upright");
+    cardupright.innerHTML = selectedCardObj.upright;
+
+let cardreverse = document.querySelector(".reverse");
+    console.log(cardreverse);
+    cardreverse.textContent = selectedCardObj.reverse;
+    // cardreverse.setAttribute("class", ".reverse");
+    cardreverse.innerHTML = selectedCardObj.reverse;
+    
+let cardcopyright = document.querySelector(".copyright");
+    console.log(cardcopyright);
+    cardcopyright.textContent = selectedCardObj.copyright;
+    // cardcopyright.setAttribute("class", ".copyright");    
+    cardcopyright.innerHTML = selectedCardObj.copyright;
+
+let cardhoroscope = document.querySelector(".horoscope");
+    console.log(cardhoroscope);
+    cardhoroscope.textContent = selectedCardObj.horoscope;
+    // cardhoroscope.setAttribute("class", ".horoscope");   
+    cardhoroscope.innerHTML = selectedCardObj.horoscope;  
 
 // This will allow card.js to have variables that contain the deck, card, and card ojects that are associated with the card that was selected from index.js
 
+// loop throughg idMatchCards to create a div for each card and append to associated-cards div 
+
+for(let i=0; i < idMatchCards.length; i++){
+
+    let deck;
+    for(let x=0; x < decks.length; x++){
+        console.log("Seeking deck for each card: ", idMatchCards[i])
+        if(decks[x].id === idMatchCards[i].deck_id){
+            deck = decks[x];
+        }
+    }
+
+    console.log("this is the deck: ", deck)
+    
+    console.log(idMatchCards[i]);
+    let cardDiv = document.createElement("div");
+    console.log(cardDiv);
+    // create image 
+    let cardImage = document.createElement("img");
+    cardImage.src = idMatchCards[i].image;
+    cardImage.alt = "card image for " + chosenCard.name + " - " + deck.name;
+    // create header for image 
+    let cardHeader = document.createElement("h3");
+    cardHeader.textContent = chosenCard.name + " - " + deck.name;
+
+    // create link to view individual card in card.html
+    let cardLink = document.createElement("a");
+    cardLink.setAttribute("href", `./card.html?card=${idMatchCards[i].id}` )
+    cardLink.textContent = "View"
+
+    cardDiv.append(cardImage);
+    cardDiv.append(cardHeader);
+    cardDiv.append(cardLink);
+    document.querySelector(".associated-cards").append(cardDiv);
+
+}

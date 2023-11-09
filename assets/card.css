@@ -208,3 +208,8 @@ footer ul li {
         font-size: .8em;
     }
 }
+
+
+.associated-cards img {
+    width: 200px;
+}
