@@ -13,49 +13,51 @@ const cardId = parseInt(urlParams.get("card"));
 // console.log(cardData);
 let selectedCardObj
 
-for (let i=0; i < cardData.length; i++){
-    console.log(cardData[i]);
+for (let i=0; i < cardData.length; i++) {
+    // console.log(cardData[i]);
     if (cardData[i].id === cardId) {
     selectedCardObj = cardData[i];
     }
-};
+}
 console.log(selectedCardObj);
 
 //LINES 25-58 = LOOP PRACTICE: "chosen" deck, card, image, and copyright.
+
 let chosenDeck;
 for (let i = 0; i < decks.length; i++) {
-    console.log(decks[i])
-    if(decks[i].id === selectedCardObj.deck_id){
+    // console.log(decks[i]);
+    if(decks[i].id === selectedCardObj.deck_id) {
     chosenDeck = decks[i];
- }
+    }
 }
-console.log(chosenDeck);
+// console.log(chosenDeck);
     
 let chosenCard;
     for (let i = 0; i < cards.length; i++) {
-        console.log(cards[i])
+        // console.log(cards[i]);
         if(cards[i].id === selectedCardObj.card_id) {
         chosenCard = cards[i];
- }       
+    }       
 }
-console.log(chosenCard);
+// console.log(chosenCard);
 
-// let chosenImage;
-//     for (let i = 0; i < cardData.length; i++) {
-//         console.log(cardData[i]);
-//         if(cardData[i].image === selectedCardObj.image) {
-//         chosenImage = cardData[i];   
-//         }
-//     }
-//     console.log(chosenImage);
+let chosenImage;
+    for (let i = 0; i < cardData.length; i++) {
+        // console.log(cardData[i]);
+        if(cardData[i].image === selectedCardObj.image) {
+        chosenImage = cardData[i];   
+        }
+}
+// console.log(chosenImage);
 
-// let chosenCopyright;
-//     for (let i = 0; i < cardData.length; i++) {
-//         if(cardData[i].copyright === selectedCardObj.copyright) {
-//         chosenCopyright = cardData[i]; 
-//         }
-//     }
-//     console.log(chosenCopyright);
+let chosenCopyright;
+    for (let i = 0; i < cardData.length; i++) {
+        // console.log(cardData[i]);
+        if(cardData[i].copyright === selectedCardObj.copyright) {
+        chosenCopyright = cardData[i]; 
+        }
+    }
+    // console.log(chosenCopyright);
 
 // LINES: 61-67: Also, defined: "&&" = Operator with description of "and". "!== means 'not equal value or not equal type" - These operators imply that the each card's id number are not identical but the parameters are the same.
 let idMatchCards = []
@@ -109,16 +111,27 @@ console.log(idMatchCards);
 // sameIdCards //is an array of objs that match the same selectedCard.id with the selectedCardObj is associated with. 
 
 let cardHeader = document.querySelector(".card-name");
-cardHeader.textContent = chosenCard.name;
+    console.log(cardHeader);
+    cardHeader.textContent = chosenCard.name;
+    cardHeader.setAttribute("class", ".card-name");
 
-let  deckHeader = document.querySelector(".deck-name");
-cardHeader.textContent = chosenDeck.name;
+let deckName = document.querySelector(".deck-name");
+    console.log(deckName);
+    deckName.textContent = chosenDeck.name;
+    deckName.setAttribute("class", ".deck-name");
 
 let cardSuit = document.querySelector(".card-suit");
-cardSuit.textContent = selectedCard.suit;
+    console.log(cardSuit);
+    cardSuit.textContent = chosenCard.suit;
+    cardSuit.setAttribute("class", "card-suit");
 
-document.querySelector(".card-image").src = selectedCardObj.image;
+let cardImage = document.querySelector(".card-image").src = selectedCardObj.image;
+    console.log(cardImage);
 
+let cardUpright = document.querySelector(".upright");
+    console.log(cardUpright);
+    cardUpright.textContent = selectedCardObj.upright;
+    cardUpright.setAttribute("class", "card-p")
 
 // This will allow card.js to have variables that contain the deck, card, and card ojects that are associated with the card that was selected from index.js
 
