@@ -182,6 +182,18 @@ footer ul li {
     padding: 3px 0;
 }
 
+.search {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.search input {
+    width: 70%;
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+
 @media screen and (max-width: 600px) {
 
     .card-container {

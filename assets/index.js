@@ -158,3 +158,22 @@ function resetCard(card){
     let reverse = card.querySelector(".reverse");
     reverse.style.display = "none";
 }
+
+function cardFilter(filterText) {
+    console.log("I was called! cardFilter() " + filterText);
+    // console.log(cards);
+    // use map to filter cards to create a new array the only contains the cards with the card name including the filterText
+    let filteredCards = cards.filter((c, i) => {
+        if (c.name.toLowerCase().includes(filterText.toLowerCase())) {
+            console.log(c);
+            return c;
+            // filteredCards.push(c);
+        }
+    })
+    console.log(filteredCards);
+}
+
+
+// if(){ 
+//     console.log(c)
+// }
