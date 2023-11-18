@@ -124,7 +124,7 @@ let deckname = document.querySelector(".deck-name");
     deckname.textContent = chosenDeck.name;
     // deckname.setAttribute("class", ".deck-name");
 
-let cardsuit = document.querySelector(".card-suit");
+let cardsuit = document.querySelector(".c-card-suit");
     console.log(cardsuit);
     cardsuit.textContent = chosenCard.suit;
     // cardsuit.setAttribute("class", "card-suit");
@@ -132,25 +132,25 @@ let cardsuit = document.querySelector(".card-suit");
 let cardimage = document.querySelector(".card-image").src = selectedCardObj.image;
     console.log("card-image");
 
-let wtmeaning = document.querySelector(".wtmeaning");
+let wtmeaning = document.querySelector(".c-wtmeaning");
     console.log(wtmeaning);
     wtmeaning.textContent = selectedCardObj.wtmeaning;
     // wtmeaning.setAttribute("class", "wtmeaning");    
     wtmeaning.innerHTML = selectedCardObj.wtmeaning;
 
-let cardupright = document.querySelector(".upright");
+let cardupright = document.querySelector(".c-upright");
     console.log(cardupright);
     cardupright.textContent = selectedCardObj.upright;
     // cardupright.setAttribute("class", ".upright");
     cardupright.innerHTML = selectedCardObj.upright;
 
-let cardreverse = document.querySelector(".reverse");
+let cardreverse = document.querySelector(".c-reverse");
     console.log(cardreverse);
     cardreverse.textContent = selectedCardObj.reverse;
     // cardreverse.setAttribute("class", ".reverse");
     cardreverse.innerHTML = selectedCardObj.reverse;
     
-let cardcopyright = document.querySelector(".copyright");
+let cardcopyright = document.querySelector(".c-copyright");
     console.log(cardcopyright);
     cardcopyright.textContent = selectedCardObj.copyright;
     // cardcopyright.setAttribute("class", ".copyright");    

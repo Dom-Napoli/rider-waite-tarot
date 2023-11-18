@@ -22,22 +22,27 @@ nav {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
     width: 70%;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 ul li {
     list-style: none;
-    width: 18%;
-    text-align: right;
+    text-align: left;
+    padding-right: 10px;
 }
 
 ul li a {
     font-family: Trebuchet MS;
-    font-size: 1em;
-    font-weight: 600;
-    color: #450396;
+    font-size: 0.7em;
+    font-weight:400;
+    color: white;
+    background: #450396;
+    padding: 3px 8px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
@@ -49,6 +54,7 @@ ul li a {
     justify-content: space-around;   
     margin: 0 20px;
     background: #c7c7c7;
+    /* background: whitesmoke; */
     margin: 0 auto;
 }
 
@@ -58,8 +64,9 @@ ul li a {
     flex-direction: row;
     align-items: flex-start;
     margin: 20px 8px 20px 8px;
-    background: #ffffff;
+    background: #e3dfe7;
     border: 2px solid #450396;
+    box-shadow: 2px 5px 6px 3px #8f8f8f;
 } 
 
 .pic-side {
@@ -68,19 +75,18 @@ ul li a {
     flex-direction: column;
     justify-content: center;
     margin: 20px 8px 20px 8px;
-    background: #f1f0f0;
 }
 
 .pic-side img {
     width: 100%;
     height: auto;
-    border-radius: 15px;;
-    box-shadow: 2px 5px 6px 3px #8f8f8f;
-    /* padding-top: 13px; */
+    border-radius: 15px;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
 .imageb {
-    background: #c7c7c7;
+    /* background: #c7c7c7; */
+    background: white;
     font-family: arial;
     color: #000;
     font-size: 11px;
@@ -93,6 +99,7 @@ ul li a {
     width: 50%;
     border-radius: 20px;
     padding: 2px;
+    box-shadow: 2px 3px 4px 2px #8f8f8f;
 }
 
 .text-side {
@@ -102,8 +109,8 @@ ul li a {
     display: flex;
     flex-direction: column;
     margin: 20px 8px 20px 8px;
-    background: #ffffff;
     border: 1px solid #000;
+    background: white;
 }
 
 ::-webkit-scrollbar {
@@ -113,8 +120,8 @@ ul li a {
 
 .text-side p {
     font-family: Arial Narrow;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     color: #000;
     text-align: left;
     text-indent: 9px;
@@ -128,19 +135,21 @@ ul li a {
     text-align: center;
     font-weight: bold;
     font-style: normal;
-    padding: 10px 11px;
+    padding: 5px 8px;
 }
 
 .text-side .horoscope {
-    font-size: 12px;
+    font-size: 11px;
     color: #450396;
+    font-family: Arial;
     text-indent: none;
     text-align: center;
     font-weight: bold;
-    font-style: normal;  
+    font-style: oblique;  
+    padding: 10px 8px;
 }
 
-.text-side a {
+/* .text-side a {
     text-decoration: none;
     font-family: arial;
     font-weight: bold;
@@ -150,18 +159,19 @@ ul li a {
     text-align: center;
     width: 50%;
     margin: 10px auto;
-}
+} */
 
 footer {
-    color: #450396;
+    color: #000;
     background-color: #dbdbdb;
     font-family: Trebuchet MS;
     padding: 20px;
 }
 
 h2 {
-    margin: 0 30px;
+    margin: 0 auto;
     padding: 5px 0;
+    font-size: 1.1em;
 }
 
 footer ul {
@@ -170,15 +180,15 @@ footer ul {
     align-items: flex-start;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 footer ul li {
     list-style: none;
-    /* width: 100%; */
-    margin: 0 30px;
-    font-size: 14px;
-    font-weight: 600;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: 400;
     padding: 3px 0;
 }
 
@@ -208,9 +218,8 @@ footer ul li {
 
     nav {
         padding: 10px;
-    }
+    } */
 
     ul li a {
-        font-size: .8em;
+    font-size: .8em; 
     }
-}

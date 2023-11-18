@@ -1,215 +1,51 @@
-body {  
-    background: #c5c0cb;
-    /* background: black; */
-    margin: 0;
-}
-
-nav {
-    background: #dbdbdb;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    box-shadow: #450396 0px 0px 10px 0px;;
-}
-
-.logo-img {
-    width:5%;
-    height: auto;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 70%;
-}
-
-ul li {
-    list-style: none;
-    width: 18%;
-    text-align: right;
-}
-
-ul li a {
-    font-family: Trebuchet MS;
-    font-size: 1em;
-    font-weight: 600;
-    color: #450396;
-    text-decoration: none;
-}
-
 .container {
     display: flex;
-    width:90%;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;   
-    margin: 0 20px;
-    background: #c7c7c7;
-    margin: 0 auto;
 }
 
-.card-container {
-    width: 43%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 20px 8px 20px 8px;
-    background: #ffffff;
-    border: 2px solid #450396;
-} 
+.container div {
+    width: 40%;
+}
 
-.card-front {
-    width: 49%;
+.card-container-2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 20px 8px 20px 8px;
-    background: #f1f0f0;
+} 
+
+.alt-cards-h3 {
+    display: inline;
 }
 
 h3 {
     font-family: Trebuchet MS;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #450396;
+    margin: 0;
+    display: inline;
 }
 
 h4 {
     font-family: Arial Narrow;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     color: #000; 
+    margin: auto;
+    display: inline;
 }
 
-.card-image {
+.associated-cards {
+    display: flex;
+    flex-direction:column;
+}
+
+.associated-cards div {
     width: 100%;
-    height: auto;
-    border-radius: 15px;;
-    box-shadow: 2px 5px 6px 3px #8f8f8f;
-    /* padding-top: 13px; */
 }
 
-/* .imageb {
-    background: #c7c7c7;
-    font-family: arial;
-    color: #000;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 2px solid #450396;
-    margin: 30px auto; 
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    border-radius: 20px;
-    padding: 2px;
-} */
-
-.text-back {
-    /* overflow: auto;
-    height: 400px; */
-    width: 48%; 
-    display: flex;
-    flex-direction: column;
-    margin: 20px 8px 20px 8px;
-    background: #ffffff;
-    border: 1px solid #000;
-}
-
-/* ::-webkit-scrollbar {
-    width: 3px;
-    background: #450396;
-} */
-
-p {
-    font-family: Arial Narrow;
-    font-size: 13px;
-    font-weight: 500;
-    color: #000;
-    text-align: left;
-    text-indent: 9px;
-    padding: 16px 11px;
-    margin: 0 auto;
-}
-
-.text-back .copyright {
-    font-size: 8px;
-    text-indent: none;
-    text-align: center;
-    font-weight: bold;
-    font-style: normal;
-    padding: 10px 11px;
-}
-
-.text-back a {
-    text-decoration: none;
-    font-family: arial;
-    font-weight: bold;
-    font-size: 11px;
-    color: blue;
-    display: block;
-    text-align: center;
-    width: 50%;
-    margin: 10px auto;
-}
-
-footer {
-    color: #450396;
-    background-color: #dbdbdb;
-    font-family: Trebuchet MS;
-    padding: 20px;
-}
-
-h2 {
-    margin: 0 30px;
-    padding: 5px 0;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    list-style: none;
-    /* width: 100%; */
-    margin: 0 30px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 3px 0;
-}
-
-@media screen and (max-width: 600px) {
-
-    .card-container {
-        width: 100%;
-    }
-
-        
-    .logo-img {
-        width:15%;
-        height: auto;
-    }
-
-    nav {
-        padding: 10px;
-    }
-
-    ul li a {
-        font-size: .8em;
-    }
-}
-
-
-.associated-cards img {
+.associated-cards div img {
     width: 200px;
+}
+
+.associated-cards div h3 {
+    color: red;
 }
