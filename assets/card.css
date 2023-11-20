@@ -1,51 +1,124 @@
-.container {
+.card-container {
     display: flex;
-}
-
-.container div {
-    width: 40%;
-}
-
-.card-container-2 {
-    display: flex;
-    flex-direction: column;
-} 
-
-.alt-cards-h3 {
-    display: inline;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 h3 {
     font-family: Trebuchet MS;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: #450396;
+    text-align: center;
     margin: 0;
-    display: inline;
+    padding: 5px 0 5px 5px;
 }
 
 h4 {
     font-family: Arial Narrow;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: #000; 
-    margin: auto;
-    display: inline;
+    margin: 0;
+    padding: 5px 0 5px 5px; 
+}
+
+.c-card-suit {
+    text-align: center;
+}
+
+.pic-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #e3dfe7;
+    margin: 0 auto;
+    padding: 5px 0 30px 0; 
+}
+
+.pic-side img {
+    width: 25%;
+    height: auto;
+}
+
+div .c-text-side {
+    margin: 10px 20px 10px 20px;
+    border: 3px solid #450396;
+    background: #fbfbfb;
+}
+
+p {
+    font-family: Arial Narrow;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    margin: 0 auto;
+}
+
+p.c-copyright {
+    font-size: 8px;
+    font-weight: 900;
+}
+
+div .card-container-2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .associated-cards {
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
+}
+
+.alt-cards-h2 {
+    display: inline;
+    text-align: center;
+    padding: none;
 }
 
 .associated-cards div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #e3dfe7;
+    margin: 0 auto;
+    padding: 5px 0 30px 0; 
 }
 
 .associated-cards div img {
-    width: 200px;
+    /* width: 200px; */
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
 .associated-cards div h3 {
-    color: red;
+    font-family: Trebuchet MS;
+    font-size: 1em;
+    font-weight: 600;
+    color: #450396;
+    margin: 0;
+    text-align: center;
+}
+
+.associated-cards div a {
+    /* color: red; */
+    background: white;
+    font-family: arial;
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #450396;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 2px 3px 4px 2px #8f8f8f;
 }

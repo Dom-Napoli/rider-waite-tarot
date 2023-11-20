@@ -113,10 +113,10 @@ ul li a {
     background: white;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 3px;
     background: #450396;
-}
+} */
 
 .text-side p {
     font-family: Arial Narrow;

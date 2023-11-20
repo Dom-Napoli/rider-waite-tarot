@@ -156,11 +156,11 @@ let cardcopyright = document.querySelector(".c-copyright");
     // cardcopyright.setAttribute("class", ".copyright");    
     cardcopyright.innerHTML = selectedCardObj.copyright;
 
-let cardhoroscope = document.querySelector(".horoscope");
-    console.log(cardhoroscope);
-    cardhoroscope.textContent = selectedCardObj.horoscope;
-    // cardhoroscope.setAttribute("class", ".horoscope");   
-    cardhoroscope.innerHTML = selectedCardObj.horoscope;  
+// let cardhoroscope = document.querySelector(".horoscope");
+//     console.log(cardhoroscope);
+//     cardhoroscope.textContent = selectedCardObj.horoscope;
+//     cardhoroscope.setAttribute("class", ".horoscope");   
+//     cardhoroscope.innerHTML = selectedCardObj.horoscope;  
 
 // This will allow card.js to have variables that contain the deck, card, and card ojects that are associated with the card that was selected from index.js
 
