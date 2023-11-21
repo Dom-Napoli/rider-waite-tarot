@@ -1,10 +1,11 @@
 h3 {
     font-family: Trebuchet MS;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #450396;
     text-align: center;
     margin: 0;
+    padding-bottom: 5px;
 }
 
 h4 {
@@ -27,11 +28,13 @@ h4 {
     padding: 5px 0 20px 0; 
     margin: 10px 20px 10px 20px;
     box-shadow: 0 3px 5px 0 #450396;
+    border: 0.7px whitesmoke solid;
 }
 
 .pic-side img {
     width: 25%;
     height: auto;
+    border: 0.3px whitesmoke solid;
     box-shadow: 2px 3px 4px 2px #8f8f8f;
 }
 
@@ -39,12 +42,14 @@ div .c-text-side {
     margin: 10px 20px 10px 20px;
     border: 2px solid #450396;
     background: #fbfbfb;
+    width: 100%;
 }
 
 p {
     font-family: Arial Narrow;
     font-size: 13px;
-    text-align: center;
+    text-align: justify;
+    word-wrap: break-word;
     padding: 5px 20px 5px 20px;
     margin: 0 auto;
 }
@@ -52,7 +57,8 @@ p {
 p.c-copyright {
     font-size: 8px;
     font-weight: 900;
-    color: #450396;
+    color: #000;
+    text-align: center;
 }
 
 .card-container-2 {
@@ -62,6 +68,8 @@ p.c-copyright {
     margin: 10px 20px 10px 20px;
     padding-bottom: 20px;
     box-shadow: 0 3px 5px 0 #450396;
+    border: 0.7px whitesmoke solid;
+    width: 100%;
 }
 
 .associated-cards {
@@ -71,12 +79,13 @@ p.c-copyright {
 
 .alt-cards-h2 {
     font-family: Trebuchet MS;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #450396;
     display: inline;
     text-align: center;
     padding: none;
+    padding-bottom: 5px;
 }
 
 .associated-cards div {
@@ -86,15 +95,15 @@ p.c-copyright {
     align-items: center;
     justify-content: center;
     background: #e3dfe7;
-    border: 2px solid #450396;
-    margin: 10px 20px 10px 20px;
-    padding: 10px 0 30px 0; 
+    margin: auto;
+    /* padding: 10px 0 30px 0;  */
 }
 
 .associated-cards div img {
     width: 50%;
     height: auto;
     border-radius: 15px;
+    border: 0.3px whitesmoke solid;
     box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 

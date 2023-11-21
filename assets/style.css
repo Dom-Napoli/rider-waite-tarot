@@ -52,7 +52,7 @@ ul li a {
     height: auto;
     flex-wrap: wrap;
     justify-content: space-around;   
-    margin: 0 20px;
+    /* margin: 0 20px; */
     background: #c7c7c7;
     /* background: whitesmoke; */
     margin: 0 auto;
@@ -65,8 +65,10 @@ ul li a {
     align-items: flex-start;
     margin: 20px 8px 20px 8px;
     background: #e3dfe7;
-    border: 2px solid #450396;
-    box-shadow: 2px 5px 6px 3px #8f8f8f;
+    /* border: 2px solid #450396; */
+    border: 0.7px whitesmoke solid;
+    /* box-shadow: 2px 5px 6px 3px #8f8f8f; */
+    box-shadow: 0 4px 5px 0 #450396;
 } 
 
 .pic-side {
@@ -81,6 +83,7 @@ ul li a {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    border: 0.3px whitesmoke solid;
     box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
@@ -113,18 +116,20 @@ ul li a {
     background: white;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 3px;
     background: #450396;
-} */
+}
 
 .text-side p {
     font-family: Arial Narrow;
     font-size: 14px;
     font-weight: 400;
     color: #000;
-    text-align: left;
-    text-indent: 9px;
+    /* text-align: left; */
+    text-align: justify;
+    word-wrap: break-word;
+    text-indent: 20px;
     padding: 16px 11px;
     margin: 0 auto;
 }
@@ -142,10 +147,10 @@ ul li a {
     font-size: 11px;
     color: #450396;
     font-family: Arial;
-    text-indent: none;
+    /* text-indent: none; */
     text-align: center;
     font-weight: bold;
-    font-style: oblique;  
+    /* font-style: oblique;   */
     padding: 10px 8px;
 }
 
