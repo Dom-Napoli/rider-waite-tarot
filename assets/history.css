@@ -36,6 +36,12 @@ h4 {
     padding: 5px 0 5px 0;
 }
 
+.photos-div {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .portrait {
     width: 45%;
     height: auto;
